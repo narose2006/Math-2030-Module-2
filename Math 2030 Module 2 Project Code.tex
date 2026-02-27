@@ -10,7 +10,7 @@
 \maketitle
 
 \section{Introduction}
-\ Electrostatics is not only a popular topic in physics, but also an important one. Electric fields are very in electronics. From the phones we use everyday, to powerful MRI's that allow doctors to see inside the human body, electrostatics is used constantly. However, nothing is every ideal, and the world is full of complex shapes, which causes issues when trying to figure out the relations for electric fields. That is where Gauss' Law comes in. Gauss' Law is used for finding expressions for the electric field, relating the electric flux to a closed surface (called a gaussian surface) and the charge enclosed within this surface (Kamberaj 27). This project intends to describe to the reader what Gauss' Law is, examples of it's uses in electric fields, and discuss how this is shown in the world around us. 
+\ Electrostatics is not only a popular topic in physics, but also an important one. Electric fields are very in electronics. From the phones we use everyday, to powerful MRI's that allow doctors to see inside the human body, electrostatics is used constantly. However, nothing is every ideal, and the world is full of complex shapes, which causes issues when trying to figure out the relations for electric fields. That is where Gauss' Law comes in. Gauss' Law is used for finding expressions for the electric field, while not exactly using the electric field itself, but instead using the electric flux ("Applying Gauss's Law"). Gauss's Law does this through the use of a Gaussian Surface, an arbitrary shape in which certain symmetries can be used.This project intends to describe to the reader what Gauss' Law is, examples of it's uses in electric fields, and discuss how this is shown in the world around us. 
 \section{What is Gauss' Law, and how is it formulated?}
 
 \subsection{Electric Flux}
@@ -19,6 +19,28 @@
 \subsection{Gauss' Law}
 \ Gauss' Law describes the relationship between an object and what's called as a Gaussian surface. A Gaussian surface is a surface which takes advantage of symmetries of it's charge distribution within an arbitrary object, such as spherical, cylindrical, or planar symmetries. From this, we can describe Gauss' Law as $$\Phi_E=\int \mathbf{E}\cdot\mathrm{dA}\hat{\mathbf{n}}=\frac{q_{encl}}{\epsilon_0}$$ 
 \textit{Proof of Gauss' Law:}
-Suppose we have Some arbitrary shaped object. We take the Gaussian Surface to be a Sphere with uniform charge $q_{encl}$ and radius r. Then the electric field going through the surface is $E=\frac{k_eq}{r^2]}$. To find the electric flux, we split the sphere into tiny areas $\mathrm{dA}$. Thus, the electric flux is $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{k_eq_{encl}}{r^2}\times4\pi r^2=\frac{q_{encl}}{4\pi\epsilon_0r^2}\times 4\pi r^2=\frac{q_{encl}}{\epsilon_0}$$, as required. Here by definition, columbs constant $k_e=\frac{1}{4\pi\epsilon_0}$
+Suppose we have Some arbitrary shaped object. We take the Gaussian Surface to be a Sphere with uniform charge $q_{encl}$ and radius r. Then the electric field going through the surface is $E=\frac{k_eq}{r^2]}$. To find the electric flux, we split the sphere into tiny areas $\mathrm{dA}$. Thus, the electric flux is $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{k_eq_{encl}}{r^2}\times4\pi r^2=\frac{q_{encl}}{4\pi\epsilon_0r^2}\times 4\pi r^2=\frac{q_{encl}}{\epsilon_0}$$, as required. Here by definition, coulomb's constant $k_e=\frac{1}{4\pi\epsilon_0}$
+\subsection{How to use Gauss' Law}
+The steps that are involved with Gauss's Law are quite simple to follow. First, find any symmetries in the problem (like cylindrical, etc...), then chose a Gaussian Surface that comes with the same symmetry as the problem states (For example, if a charge has spherical symmetries, use a sphere as the Gaussian Surface), then use Gauss' Law to evaluate the electric field with any charge distribution (Linear charge, surface charge, or volume charge density) ("Applying Gauss's). 
+
+\section{Examples of how Gauss' Law can be used}
+\ \textit{Example 1: Suppose we have an infinite rod of linear charge density $\lambda$ (That is, $\lambda=\frac{q}{l}$}), with radius r, what is the magnitude of the electric field at an arbitrary point p?
+
+\ Solution: We take our gaussian surface to be a cylinder with radius r and length l. Since the electric field will be moving in the x direction, the only point in which the electric field acts on the gaussian surface is through the base of the cylinder. So: $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{q_{encl}}{\epsilon_0}$$
+
+Since the area of a cylinder is $A=2\pi rL$, and $q_{encl}=\lambda L$, then: $$E=\frac{\lambda L}{A\epsilon_0}=\frac{\lambda L}{2\pi rL\epsilon_0}\longrightarrow E=\frac{\lambda}{2\pi r \epsilon_0}$$
+
+\textit{Example 2: Consider a sphere with volune charge density $\rho=\frac{q}{V}$, and radius R. Find the magnitude of the electric field.}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.85\linewidth]{Gauss's Law Example.png}
+    \caption{A sphere with charge density $\rho$, and radius R With the gaussian surface inside and outside the sphere ("Applying Gauss's)}
+    \label{fig:Fig 1}
+\end{figure}
+
+\ Solution: Choose the gaussian surface to be a sphere with radius r. Then we have two cases:
+\\ Case 1: $r<R$. Then $q=\rho(\frac{4}{3}\pi r^3)$. So: $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{q_{encl}}{\epsilon_0}$$.
+$$E(4\pi r^2)=\frac{4\pi r^3\rho}{3\epsilon_0}\longrightarrow E=\frac{\rho r}{3\epsilon_0}$$
+\\ Case 2: $r>R$. Then $q=\rho(\frac{4}{3}\pi R^3)$, and: $$\Phi_E=EA=\frac{\rho(\frac{4}{3}\pi R^3)}{\epsilon_0}$$. $$E(4\pi r^2)=\frac{\rho(\frac{4}{3}\pi R^3)}{\epsilon_0}\longrightarrow E=\frac{\rho R^3}{3\epsilon_0 r^2}$$
 
 \end{document}
