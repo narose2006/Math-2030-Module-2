@@ -30,17 +30,27 @@ The steps that are involved with Gauss's Law are quite simple to follow. First, 
 
 Since the area of a cylinder is $A=2\pi rL$, and $q_{encl}=\lambda L$, then: $$E=\frac{\lambda L}{A\epsilon_0}=\frac{\lambda L}{2\pi rL\epsilon_0}\longrightarrow E=\frac{\lambda}{2\pi r \epsilon_0}$$
 
-\textit{Example 2: Consider a sphere with volune charge density $\rho=\frac{q}{V}$, and radius R. Find the magnitude of the electric field.}
+\textit{Example 2: Consider a sphere with volume charge density $\rho=\frac{q}{V}$, and radius R. Find the magnitude of the electric field.}
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.85\linewidth]{Gauss's Law Example.png}
-    \caption{A sphere with charge density $\rho$, and radius R With the gaussian surface inside and outside the sphere ("Applying Gauss's)}
+    \caption{A sphere with charge density $\rho$, and radius R With the gaussian surface inside and outside the sphere ("Applying Gauss's")}
     \label{fig:Fig 1}
 \end{figure}
 
 \ Solution: Choose the gaussian surface to be a sphere with radius r. Then we have two cases:
-\\ Case 1: $r<R$. Then $q=\rho(\frac{4}{3}\pi r^3)$. So: $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{q_{encl}}{\epsilon_0}$$.
+\\ Case 1: $r<R$. Then $q_{encl}=\rho(\frac{4}{3}\pi r^3)$. So: $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{q_{encl}}{\epsilon_0}$$.
 $$E(4\pi r^2)=\frac{4\pi r^3\rho}{3\epsilon_0}\longrightarrow E=\frac{\rho r}{3\epsilon_0}$$
-\\ Case 2: $r>R$. Then $q=\rho(\frac{4}{3}\pi R^3)$, and: $$\Phi_E=EA=\frac{\rho(\frac{4}{3}\pi R^3)}{\epsilon_0}$$. $$E(4\pi r^2)=\frac{\rho(\frac{4}{3}\pi R^3)}{\epsilon_0}\longrightarrow E=\frac{\rho R^3}{3\epsilon_0 r^2}$$
+\\ Case 2: $r>R$. Then $q_{encl}=\rho(\frac{4}{3}\pi R^3)$, and: $$\Phi_E=EA=\frac{\rho(\frac{4}{3}\pi R^3)}{\epsilon_0}$$. $$E(4\pi r^2)=\frac{\rho(\frac{4}{3}\pi R^3)}{\epsilon_0}\longrightarrow E=\frac{\rho R^3}{3\epsilon_0 r^2}$$
+
+\section{Real World Applications of Gauss's Law}
+\subsection{Process Engineering Applications}
+ Since Gauss's Law aids in finding electric field relations, it can be especially useful with anything involving electric fields. One such application is in process engineering. Electric fields, and subsequently Gauss's Law is used in electric field assisted combustion. Flames are electrically neutral, but when an electric field is applied, it can act as a cathode (Gains electrons), then positive ions from the electric field gets attracted towards the flame, which can affect chemical reactions, as well as the structure of the flame itself (Zigan 5). Another way is through what's called Electrostatic Precipitation (or ESP). The setup for this is electrodes, some of which are "Collecting" electrodes, and others are "discharge" electrodes which are uncharged. A high voltage is applied, which causes an electric field. This causes electric charge to attach to particles, which attracts the particles to the collecting electrode, which is then taken to be disposed of (Zigan 13). 
+
+\subsection{Food Processing Applications}
+\ The next application is with food processing. In this, a High Voltage Electric Field (HVEF) is used for many things, one of which being the removal of impurities in liquids. This is called electro-hydraulic discharge, and it makes use of High Voltage Electric Discharge (HVED), which is extremely good for heat transfer, and can remove impurities from common liquids like watter or oil, simply by heating it up enough so that the impurities are evaporated (Dalvi-isfahan et. al). 
+
+\section{Conclusion}
+\ Gauss's Law is both an important, and versatile law in the world of electrostatics, due to is usefulness in finding electric fields. From process engineering, to food processes, Gauss's Law can aid in finding the electric field of a given setup, which allows for accurate and precise measurements needed to successfully complete a task. By understanding how to use Gauss's Law, its uses are extremely efficient.   
 
 \end{document}
