@@ -14,17 +14,17 @@
 \section{What is Gauss' Law, and how is it formulated?}
 
 \subsection{Electric Flux}
-\ Before we talk about Gauss' Law, we first must talk about electric flux. Suppose we have an arbitrary object, which has a uniform electric field $\mathbf{E}$ passing through it. To make calculations simpler, we split the object into tiny square areas $\mathrm{dA}$, which have a normal vector pointing perpendicular to the area $\hat{\mathbf{n}}$. Thus, by definition, the electric flux is defined as $$\Phi_E=\int\mathbf{E}\cdot \mathrm{dA} \hat{\mathbf{n}} $$. Since we are summing an infinite amount of small areas, we integrate over $\mathrm{dA}$
+\ Before we talk about Gauss's law, we first must talk about electric flux. Suppose that we have an arbitrary object, that has a uniform electric field $\mathbf{E}$ passing through it. To simplify calculations, we divide the object into tiny square areas $\mathrm{dA}$, which have a normal vector pointing perpendicular to the area $\hat{\mathbf{n}}$. Thus, by definition, the electric flux is defined as $$\Phi_E=\int\mathbf{E}\cdot \mathrm{dA} \hat{\mathbf{n}} $$. Since we are summing an infinite amount of small areas, we integrate over $\mathrm{dA}$
 
 \subsection{Gauss' Law}
-\ Gauss' Law describes the relationship between an object and what's called as a Gaussian surface. A Gaussian surface is a surface which takes advantage of symmetries of it's charge distribution within an arbitrary object, such as spherical, cylindrical, or planar symmetries. From this, we can describe Gauss' Law as $$\Phi_E=\int \mathbf{E}\cdot\mathrm{dA}\hat{\mathbf{n}}=\frac{q_{encl}}{\epsilon_0}$$ 
-\textit{Proof of Gauss' Law:}
-Suppose we have Some arbitrary shaped object. We take the Gaussian Surface to be a Sphere with uniform charge $q_{encl}$ and radius r. Then the electric field going through the surface is $E=\frac{k_eq}{r^2]}$. To find the electric flux, we split the sphere into tiny areas $\mathrm{dA}$. Thus, the electric flux is $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{k_eq_{encl}}{r^2}\times4\pi r^2=\frac{q_{encl}}{4\pi\epsilon_0r^2}\times 4\pi r^2=\frac{q_{encl}}{\epsilon_0}$$, as required. Here by definition, coulomb's constant $k_e=\frac{1}{4\pi\epsilon_0}$
+\ Gauss' Law describes the relationship between an object and what's known as a Gaussian surface. A Gaussian surface is a surface which takes advantage of symmetries of it's charge distribution within an arbitrary object, such as spherical, cylindrical, or planar symmetries. From this, we can describe Gauss' Law as $$\Phi_E=\int \mathbf{E}\cdot\mathrm{dA}\hat{\mathbf{n}}=\frac{q_{encl}}{\epsilon_0}$$ 
+\textit{Proof of Gauss's Law:}
+Suppose we have Some arbitrary shaped object. We take the Gaussian Surface to be a Sphere with uniform charge $q_{encl}$ and radius r. Then the electric field going through the surface is $E=\frac{k_eq}{r^2}$. To find the electric flux, we split the sphere into tiny areas $\mathrm{dA}$. Thus, the electric flux is $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{k_eq_{encl}}{r^2}\times4\pi r^2=\frac{q_{encl}}{4\pi\epsilon_0r^2}\times 4\pi r^2=\frac{q_{encl}}{\epsilon_0}$$, as required. Here by definition, coulomb's constant $k_e=\frac{1}{4\pi\epsilon_0}$
 \subsection{How to use Gauss' Law}
-The steps that are involved with Gauss's Law are quite simple to follow. First, find any symmetries in the problem (like cylindrical, etc...), then chose a Gaussian Surface that comes with the same symmetry as the problem states (For example, if a charge has spherical symmetries, use a sphere as the Gaussian Surface), then use Gauss' Law to evaluate the electric field with any charge distribution (Linear charge, surface charge, or volume charge density) ("Applying Gauss's). 
+The steps that are involved with Gauss's Law are quite simple to follow. First, find any symmetries in the problem (like cylindrical, etc...), then choose a Gaussian Surface that comes with the same symmetry as the problem states (For example, if a charge has spherical symmetries, use a sphere as the Gaussian Surface), then use Gauss's Law to evaluate the electric field with any charge distribution (Linear charge, surface charge, or volume charge density) ("Applying Gauss's). 
 
 \section{Examples of how Gauss' Law can be used}
-\ \textit{Example 1: Suppose we have an infinite rod of linear charge density $\lambda$ (That is, $\lambda=\frac{q}{l}$}), with radius r, what is the magnitude of the electric field at an arbitrary point p?
+\ \textit{Example 1: Suppose that we have an infinite rod of linear charge density $\lambda$ (That is, $\lambda=\frac{q}{l}$}), with radius r, what is the magnitude of the electric field at an arbitrary point p?
 
 \ Solution: We take our gaussian surface to be a cylinder with radius r and length l. Since the electric field will be moving in the x direction, the only point in which the electric field acts on the gaussian surface is through the base of the cylinder. So: $$\Phi_E=\int E\cdot\mathrm{dA}=EA=\frac{q_{encl}}{\epsilon_0}$$
 
@@ -53,4 +53,12 @@ $$E(4\pi r^2)=\frac{4\pi r^3\rho}{3\epsilon_0}\longrightarrow E=\frac{\rho r}{3\
 \section{Conclusion}
 \ Gauss's Law is both an important, and versatile law in the world of electrostatics, due to is usefulness in finding electric fields. From process engineering, to food processes, Gauss's Law can aid in finding the electric field of a given setup, which allows for accurate and precise measurements needed to successfully complete a task. By understanding how to use Gauss's Law, its uses are extremely efficient.   
 
+\section{Github Repository}
+Access to the repository, which includes the changes added to this project can be found here: https://github.com/narose2006/Math-2030-Module-2
+
+\bibliographystyle{plain}
+\bibliography{References}
+\cite{Gauss}
+\cite{Overview}
+\cite{FoodProcessing}
 \end{document}
